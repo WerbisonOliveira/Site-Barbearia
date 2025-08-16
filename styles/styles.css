@@ -1,0 +1,71 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Libertinus Sans, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #252326;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f9ffff;
+    padding: 1rem;
+    box-shadow: 1px 1px 7px #00000075;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#container-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+}
+
+#menu {
+    display: flex;
+    gap: 3rem;
+}
+
+.menu-item {
+    color: #000000;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition:  0.4s;
+}
+
+.menu-item:hover {
+    color: #c92c2c;
+}
+
+.btn-agendar {
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: #c92c2c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+.btn-agendar:hover {
+    opacity: 1;
+}
+
+/* Banner */
+
+
+

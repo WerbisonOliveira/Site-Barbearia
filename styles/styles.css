@@ -1,4 +1,5 @@
 /* Geral */
+
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +14,7 @@ body {
 }
 
 /* Cabeçalho */
+
 header {
     background-color: #f9ffff;
     padding: 0.5rem;
@@ -20,6 +22,7 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 #container-menu {
@@ -66,6 +69,7 @@ header {
 }
 
 /* Banner */
+
 .banner {
     height: 850px;
     background: url("../Imagens/banner.jpg") no-repeat center center / cover;
@@ -95,8 +99,9 @@ header {
 }
 
 /* Serviços */
+
 #serviços {
-    padding: 2rem;
+    padding: 2rem 2rem 20rem;
     text-align: center;
 }
 
@@ -104,7 +109,93 @@ header {
     padding: 3rem;
     font-size: 4rem;
     color: #FFF;
+    font-weight: bold;
 }
+
+.cards-serviços {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: 12rem;
+}
+
+.card {
+    width: 400px;
+    padding: 2rem;
+    border-radius: 5px;background-color: #f9ffff;
+    box-shadow: 1px 1px 7px #00000075;
+}
+
+.img {
+    background-color: #FFF;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: -90px auto 0;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img {
+    width: 90px;
+    height: 90px;
+}
+
+.card-img {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.card-img img {
+    width: 60px;
+    height: 60px;
+}
+
+.card-img span {
+    font-size: 2rem;
+    color: #c92c2c;
+}
+
+
+.card h3 {
+    font-size: 2rem;
+    margin: 1rem 0 0.5rem;
+    font-weight: bold;
+}
+
+.borda {
+    width: 60%;
+    height: 2px;
+    background-color: #c92c2c;
+    margin: 0 auto 1rem;
+}
+
+.desc p {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    margin-bottom: 1rem;
+}
+
+.preço {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #CCC;
+}
+
+.preço sup {
+    font-size: 1rem;
+}
+
+/* Sobre */
+
+
 
 
 

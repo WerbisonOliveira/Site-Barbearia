@@ -101,8 +101,9 @@ header {
 /* Serviços */
 
 #serviços {
-    padding: 2rem 2rem 20rem;
+    padding: 2rem 2rem 15rem;
     text-align: center;
+    border-bottom: 1px solid #CCC;
 }
 
 #serviços h2 {
@@ -138,6 +139,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid #c92c2c;
 }
 
 .img img {
@@ -195,7 +197,45 @@ header {
 
 /* Sobre */
 
+#quem-somos {
+    padding: 2rem 2rem 15rem;
+    background-color: #f1f1f1;
+}
 
+#quem-somos h2 {
+    padding: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+.img-sobre {
+    max-width: 600px;
+}
+
+.img-sobre img{
+    max-width: 600px;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px #00000048;
+}
+
+.sobre-desc {
+    width: 500px;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    font-weight: bold;
+}
+
+/* Contato */
 
 
 

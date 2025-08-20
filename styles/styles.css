@@ -237,7 +237,113 @@ header {
 
 /* Contato */
 
+#form-contato {
+    padding: 2rem 2rem 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
 
+#form-contato h2 {
+    padding: 3rem;
+    font-size: 4rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+}
 
+.container-form {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10rem;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 2rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
 
+.img-contato img {
+    height: 400px;
+}
 
+.form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input label {
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.form-input input {
+    padding: 1rem;
+    font-size: 1.2rem;
+    width: 450px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.form-input input:focus {
+    border: 2px solid #c92c2c;
+    outline: none;
+}
+
+.form-input textarea {
+    width: 450px;
+    height: 300px;
+    padding: 1rem;
+    font-size: 1.2rem;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.form-input textarea:focus {
+    outline: none;
+    border: 2px solid #c92c2c;
+}
+
+.form input[type="submit"] {
+    width: 450px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #c92c2c;
+    color: #FFF;
+    transition: 0.5s;
+    opacity: 0.8;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form input[type="submit"]:hover {
+    opacity: 1;
+}
+
+/* footer */
+
+#container-footer {
+    padding: 2rem;
+    color: #FFF;
+    background-color: #2c2a2d;
+    display: flex;
+    flex-direction: column;
+}

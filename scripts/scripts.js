@@ -2,7 +2,6 @@
 //seleções
 const menu = document.querySelector(".bi");
 const options = document.querySelector("#menu");
-console.log(options)
 
 //funções
 const checkMenu = () => {
@@ -11,4 +10,4 @@ const checkMenu = () => {
 //eventos
 menu.addEventListener("click", () => {
     checkMenu();
-})
+});

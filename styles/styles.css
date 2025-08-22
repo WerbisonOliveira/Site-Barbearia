@@ -20,10 +20,10 @@ header {
     background-color: #f9ffff;
     padding: 0.5rem;
     box-shadow: 1px 1px 7px #00000075;
-    position: fixed;
+    /* position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 2; */
 }
 
 #container-menu {
@@ -67,6 +67,10 @@ header {
 
 .btn-agendar:hover {
     opacity: 1;
+}
+
+i {
+    display: none;
 }
 
 
@@ -284,6 +288,7 @@ header {
 .form-input {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .form-input label {
@@ -295,7 +300,6 @@ header {
 .form-input input {
     padding: 1rem;
     font-size: 1.2rem;
-    width: 450px;
     border: none;
     border-radius: 5px;
     border: 1px solid black;
@@ -307,7 +311,7 @@ header {
 }
 
 .form-input textarea {
-    width: 450px;
+    width: 100%;
     height: 300px;
     padding: 1rem;
     font-size: 1.2rem;
@@ -323,7 +327,7 @@ header {
 }
 
 .form input[type="submit"] {
-    width: 450px;
+    width: 100%;
     height: 60px;
     cursor: pointer;
     border: none;
@@ -394,9 +398,126 @@ header {
 /* responsividade */
 
 @media (max-width: 450px) {
+
+    /* menu */
     
-    body {
-        width: 684px;
-        
+    #container-menu {
+        position: relative;
+        justify-content: space-between;
+    }
+    
+    #logo {
+        width: 90px;
+    }
+
+    #menu {
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFF;
+        padding: 2rem;
+        margin: 0;
+        border-radius: 5px;
+        opacity: 1;
+        transition: 0.4s;
+    }
+
+    .hide {
+        visibility: hidden;
+        opacity: 0 !important;
+    }
+
+    i {
+        display: block;
+    }
+
+    .bi-list {
+        font-size: 2.5rem;
+    }
+
+    /* banner */
+
+    .text-banner {
+        padding: 12rem 1rem ;
+        color: #fff;
+    } 
+
+    .text-banner h1 {
+        font-size: 4rem;
+        width: 100%;
+    }
+
+    .text-banner p {
+        font-size: 1.5rem;
+        width: 300px;
+    }
+
+    /* Serviços */
+
+    #serviços h2 {
+        font-size: 2.5rem;
+    }
+
+    .borda {
+        width: 200px;
+    }
+
+    .cards-serviços {
+        gap: 10rem;
+    }
+
+    /* sobre  */
+
+    #quem-somos h2 {
+        font-size: 2.5rem;
+    }
+
+    .img-sobre img{
+        max-width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+
+    /* form de contato */
+
+    #form-contato h2{
+        font-size: 2.5rem;
+    }
+
+    .container-form {
+        max-width: 100%;
+        padding: 0rem;
+        justify-content: center;
+    }
+
+    .img-contato img {
+        height: 200px;
+        margin-top: 1rem;
+    }
+
+    .form {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .form-input input {
+        flex: 1;
+    }
+
+    /* footer */
+
+    .info {
+        gap: 2rem;
+    }
+
+    .redes-sociais {
+        margin: 0 auto;
+    }
+
+    .redes-sociais img {
+        width: 20px;
+        height: 20px;
     }
 }

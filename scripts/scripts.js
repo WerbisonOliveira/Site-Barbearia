@@ -17,8 +17,6 @@ function animation() {
                 entry.target.classList.add("animation-card");
             }
 
-            observer.unobserve(entry.target);
-
         })
 
     }, {}); 

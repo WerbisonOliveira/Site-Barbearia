@@ -96,12 +96,24 @@ i {
     width: 600px;
     font-weight: bold;
     margin-bottom: 4rem;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: 1s;
 }
 
 .text-banner p {
     font-size: 2rem;
     width: 350px;
     line-height: 3rem;
+    opacity: 0;
+    transition: 1.5s;
+    transform: translateX(-100%);
+
+}
+
+.text-banner .animation {
+    opacity: 1;
+    transform: translateX(0%);
 }
 
 /* Serviços */
@@ -133,6 +145,7 @@ i {
     padding: 2rem;
     border-radius: 5px;background-color: #f9ffff;
     box-shadow: 1px 1px 7px #00000075;
+    opacity: 0;
 }
 
 .img {
@@ -199,6 +212,11 @@ i {
 
 .preço sup {
     font-size: 1rem;
+}
+
+.animation-card {
+    opacity: 1;
+    transition: 2s;
 }
 
 /* Sobre */
@@ -466,6 +484,16 @@ i {
 
     .cards-serviços {
         gap: 10rem;
+    }
+
+    .card {
+        transform: translateX(-100%);
+    }
+
+    .animation-card {
+        opacity: 1;
+        transform: translateX(0%);
+        transition: 2s;
     }
 
     /* sobre  */

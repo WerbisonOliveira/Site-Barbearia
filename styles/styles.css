@@ -278,6 +278,7 @@ i {
 }
 
 .container-form {
+    width: 1000px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -301,6 +302,7 @@ i {
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    flex: 1;
 }
 
 .form-input {
@@ -411,6 +413,69 @@ i {
 .copy {
     text-align: center;
     padding-bottom: 2rem;
+}
+
+/* feedback */
+
+.feedback {
+    padding: 1.2rem;
+    width: 250px;
+    height: 90px;
+    border-radius: 5px;
+    border: 1px solid #c92c2c;
+    background-color: #e88d8d;
+    position: fixed;
+    top: 110px;
+    right: 5px;
+    z-index: 3;
+    box-shadow: 1px 1px 7px #00000050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c92c2c;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-sucess {
+    width: 200px;
+    height: 200px;
+}
+
+.info-sucess {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.loading {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 7px solid #CCC;
+    border-top-color: transparent;
+    animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
 }
 
 /* responsividade */
@@ -548,4 +613,21 @@ i {
         width: 20px;
         height: 20px;
     }
+
+    /* configuração das mensagens */
+
+    .feedback {
+        width: 200px;
+        height: 70px;
+        top: 80px;
+    }
+
+    .feedback p {
+        font-size: 1.2rem;
+    }
+
+    .show {
+        padding: 1rem;
+    }
+
 }

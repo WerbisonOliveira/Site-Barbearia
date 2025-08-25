@@ -53,7 +53,7 @@ const sucess = () => {
 
     const img = document.createElement("img");
     img.classList.add("img-sucess");
-    img.src = "../Imagens/mark.png";
+    img.src = "../Imagens/check.png";
     img.alt = "Sucesso";
 
     const p = document.createElement("p");

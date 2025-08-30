@@ -143,7 +143,8 @@ i {
 .card {
     width: 400px;
     padding: 2rem;
-    border-radius: 5px;background-color: #f9ffff;
+    border-radius: 5px;
+    background-color: #f9ffff;
     box-shadow: 1px 1px 7px #00000075;
     opacity: 0;
 }

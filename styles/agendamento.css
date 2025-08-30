@@ -1,0 +1,546 @@
+/* Geral */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Libertinus Sans, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background-color: #252326;
+    width: 100%;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: #000;
+}
+
+button[type="submit"] {
+    border: none;
+    cursor: pointer;
+    background-color: #c92c2c;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFF;
+    opacity: 0.9;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Botão voltar */
+
+.back {
+    padding: 2rem;
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.4s;
+}
+
+.back-btn:hover {
+    opacity: 1;
+}
+
+.bi {
+    margin-top: 4px;
+}
+
+/* Formulário*/
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #FFF;
+    margin-bottom: 2rem;
+}
+
+.border {
+    margin-top: 1.5rem;
+    width: 200px;
+    height: 5px;
+    background-color: #c92c2c;
+}
+
+.container-form {
+    position: relative;
+    width: 65%;
+    padding: 1rem;
+    background-color: #f9ffff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+    overflow: hidden;
+}
+
+.form-title {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.img-form img {
+    width: 150px;
+}
+
+#first-form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: 0.5s;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-input label {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.form-input label > sup {
+    color: #c92c2c;
+}
+
+.form-input input[type="text"],
+.form-input input[type="tel"] {
+    width: 500px;
+    padding: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #000;
+    font-size: 1.2rem;
+}
+
+.form-input input[type="text"]:focus,
+.form-input input[type="tel"]:focus {
+    outline: none;
+    border-bottom: 1px solid #c92c2c;
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 50px;
+    padding-bottom: 1rem;
+}
+
+.form-btn button[type="submit"] {
+    border: none;
+    cursor: pointer;
+    background-color: #c92c2c;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFF;
+    opacity: 0.9;
+    transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.form-btn button[type="submit"]:hover {
+    opacity: 1;
+}
+
+/* form2 */
+
+#second-form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-150%);
+    transition: 0.5s;
+}
+
+#second-form .form-input {
+    width: 60%;
+}
+
+.form-input input[type="date"] {
+    font-size: 1.2rem;
+    border: none;
+    border-bottom: 1px solid #000;
+    padding: 5px 0px;
+}
+
+.form-input input[type="date"]:focus {
+    outline: none;
+    border-bottom: 1px solid #c92c2c;
+}
+
+#second-form .input-clock,
+#second-form .input-barber {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border: 2px solid #000;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+#second-form span {
+    font-size: 1.2rem;
+}
+
+#second-form .form-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+/* form3 */
+
+#third-form {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-150%);
+    transition: 0.5s;
+}
+
+#third-form .img-form {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+#third-form .img-form img{
+    width: 130px;
+}
+
+#third-form .form-input {
+    width: 100%;
+}
+
+.input-service {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 2px solid #000;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.input-service span {
+    font-size: 1.2rem;
+}
+
+.input-payment {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border: 2px solid #000;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.input-payment span {
+    font-size: 1.2rem;
+}
+
+#third-form .form-btn {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+
+/* footer */
+
+#container-footer {
+    color: #FFF;
+    background-color: #2c2a2d;
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #4a4a4a;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.creditos p {
+    font-size: 0.9rem;
+}
+
+.creditos p a {
+    color: #FFF;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.creditos p a:hover {
+    opacity: 1;
+}
+
+.redes-sociais img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    opacity: 0.8;
+    transition: 0.4s;
+}
+
+.redes-sociais img:hover {
+    opacity: 1;
+}
+
+.copy {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+/* mostrar form */
+
+.show {
+    position: static !important;
+    transform: translateX(0%) !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    transition: 0.5s;
+}
+
+
+.hide {
+    position: absolute !important;
+    transform: translateX(150%) !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    transition: 0.5s;
+}
+
+/* marcação do input */
+
+.checked {
+    border: 2px solid #c92c2c !important;
+}
+
+/* Configuração das mensagem do form de agendamento */
+
+.feedback {
+    padding: 1.2rem;
+    width: 250px;
+    height: 90px;
+    border-radius: 5px;
+    border: 1px solid #c92c2c;
+    background-color: #e88d8d;
+    position: fixed;
+    top: 40px;
+    right: 5px;
+    z-index: 3;
+    box-shadow: 1px 1px 7px #00000050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #c92c2c;
+}
+
+/* loading */
+.loading {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 7px solid #CCC;
+    border-top-color: transparent;
+    animation: loading 1s linear infinite;
+}
+
+.sucess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.img-sucess {
+    width: 200px;
+    height: 200px;
+}
+
+.info-sucess {
+    font-size: 2rem;
+    text-align: center;
+}
+
+@keyframes loading {
+
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+/* Responsividade */
+
+@media (max-width: 450px) {
+    .container-form {
+        width: 90%;
+    }
+    
+    .title {
+        margin: 0.5rem;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+
+
+    form {
+        width: 100%;
+    }
+
+    .form-input input[type="text"],
+    .form-input input[type="tel"] {
+       width: 100%;
+    }
+
+    .info {
+        gap: 2rem;
+    }
+
+    .redes-sociais {
+        margin: 0 auto;
+    }
+
+    .redes-sociais img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* form2 */
+
+    #second-form .img-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        width: 100px;
+    }
+
+    #second-form {
+        width: 100%;
+    }
+
+    #second-form .form-input {
+        width: 100%;
+    }
+
+    /* form3 */
+    
+    #third-form .img-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    #third-form {
+        width: 100%;
+    }
+
+    #third-form .form-input {
+        width: 100%;
+    }
+
+    /* Configuração das mensagem do form de agendamento */
+
+    .feedback {
+        width: 200px;
+        height: 70px;
+        top: 20px;
+    }
+
+    .feedback p {
+        font-size: 1.2rem;
+    }
+
+    /* loading */
+
+    .sucess {
+        height: 500px;
+    }
+}
+

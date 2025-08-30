@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia - Agendamento</title>
+    <link rel="shortcut icon" href="../Imagens/barbearia.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/agendamento.css">
+    <script src="../scripts/agendamento.js" defer></script>
+</head>
+<body>
+    <div class="back">
+        <a href="../index.html" class="back-btn">
+            <i class="bi bi-arrow-left"></i> Voltar
+        </a>
+    </div>
+    <main>
+        <div class="title">
+            <h1>Agendamento</h1>
+            <div class="border"></div>
+        </div>
+        <div class="container-form">
+            <form id="first-form">
+                <h2 class="form-title">Informe seu nome e um número para contato:</h2>
+                <div class="img-form">
+                    <img src="../Imagens/Agendamento/form.png" alt="Formulário de agendamento para contato">
+                </div>
+                <div class="form-input">
+                    <label for="nome">Nome:<sup>*</sup> </label>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="form-input">
+                    <label for="telefone">Telefone:<sup>*</sup> </label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="85988888888" maxlength="11">
+                </div>
+                <div class="form-btn">
+                    <button type="submit">Próximo <i class="bi bi-arrow-right"></i></button> 
+                </div>
+            </form>
+            <form id="second-form">
+                <h2 class="form-title">Selecione uma data e um horário e o Barbeiro na qual você gostaria de ser atendido:</h2>
+                <div class="img-form">
+                    <img src="../Imagens/Agendamento/clock.png" alt="Desenho de um relógio">
+                    <img src="../Imagens/Agendamento/hairdresser.png" alt="Desenho de um barbeiro">
+                </div>
+                <div class="form-input">
+                    <label for="data">Data:<sup>*</sup> </label>
+                    <input type="date" name="data" id="data">
+                </div>
+                <div class="form-input">
+                    <label for="horario">Horários disponíveis:<sup>*</sup> </label>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="8h30" class="horario">
+                        <span>8h30</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="9h00" class="horario">
+                        <span>9h00</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="9h30" class="horario">
+                        <span>9h30</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="10h00" class="horario">
+                        <span>10h00</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="10h30" class="horario">
+                        <span>10h30</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="11h00" class="horario">
+                        <span>11h00</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="11h30" class="horario">
+                        <span>11h30</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="14h00" class="horario">
+                        <span>14h00</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="14h30" class="horario">
+                        <span>14h30</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="15h00" class="horario">
+                        <span>15h00</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="15h30" class="horario" >
+                        <span>15h30</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="16h00" class="horario" >
+                        <span>16h00</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="16h30" class="horario" >
+                        <span>16h30</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="17h00" class="horario" >
+                        <span>17h00</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="17h30" class="horario">
+                        <span>17h30</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="18h00" class="horario">
+                        <span>18h00</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="18h30" class="horario">
+                        <span>18h30</span>
+                    </div>
+                    <div class="input-clock">
+                        <input type="radio" name="horario" value="19h00" class="horario">
+                        <span>19h00</span>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="barber">Barbeiros:</label>
+                    <div class="input-barber">
+                        <input type="radio" name="barber" value="Arthur Carvalho" class="barber">
+                        <span>Arthur Carvalho</span>
+                    </div>
+                    <div class="input-barber">
+                        <input type="radio" name="barber" value="Henrique Monteiro" class="barber">
+                        <span>Henrique Monteiro</span>
+                    </div>
+                    <div class="input-barber">
+                        <input type="radio" name="barber" value="Leonardo Ramos" class="barber">
+                        <span>Leonardo Ramos</span>
+                    </div>
+                    <div class="input-barber">
+                        <input type="radio" name="barber" value="Rafael Duarte" class="barber">
+                        <span>Rafael Duarte</span>
+                    </div>
+                    <div class="input-barber">
+                        <input type="radio" name="barber" value="Caio Almeida" class="barber">
+                        <span>Caio Almeida</span>
+                    </div>
+                    <div class="input-barber">
+                        <input type="radio" name="barber" value="Victor Martins" class="barber">
+                        <span>Victor Martins</span>
+                    </div>
+                </div>
+                <div class="form-btn">
+                    <button type="submit" id="back-btn"><i class="bi bi-arrow-left"></i> Voltar</button> 
+                    <button type="submit" id="next-btn">Próximo <i class="bi bi-arrow-right"></i></button> 
+                </div>
+            </form>
+            <form id="third-form">
+                <h2 class="form-title">Escolha o serviço e a forma de pagamento:</h2>
+                <div class="img-form">
+                    <img src="../Imagens/Agendamento/man.png" alt="Desenho de um serviço de barbearia">
+                    <img src="../Imagens/Agendamento/save-money.png" alt="Desenho de uma forma de pagamento">
+                </div>
+                <div class="form-input">
+                    <label for="service">Serviços:<sup>*</sup> </label>
+                    <div class="input-service">
+                        <input type="radio" name="service" value="Corte - R$ 39,90" class="service">
+                        <span>Corte - R$ 39,90</span>
+                    </div>
+                    <div class="input-service">
+                        <input type="radio" name="service" value="Barba - R$ 19,90" class="service">
+                        <span>Barba - R$ 19,90</span>
+                    </div>
+                    <div class="input-service">
+                        <input type="radio" name="service" value="Corte + Barba - R$ 49,90" class="service">
+                        <span>Corte + Barba - R$ 49,90</span>
+                    </div>
+                </div>
+                <div class="form-input">
+                    <label for="payment">Forma de pagamento:<sup>*</sup> </label>
+                    <div class="input-payment">
+                        <input type="radio" name="payment" value="Dinheiro" class="payment">
+                        <span>Dinheiro</span>
+                    </div>
+                    <div class="input-payment">
+                        <input type="radio" name="payment" value="Pix" class="payment">
+                        <span>Pix</span>
+                    </div>
+                    <div class="input-payment">
+                        <input type="radio" name="payment" value="Cartão" class="payment">
+                        <span>Cartão</span>
+                    </div>
+                </div>
+                <div class="form-btn">
+                    <button type="submit" id="prev"><i class="bi bi-arrow-left"> </i>Voltar</i></button> 
+                    <button type="submit" id="to-schedule">Agendar <i class="bi bi-check-lg"></i></button> 
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div id="container-footer">
+            <div class="info">
+                <div class="creditos">
+                    <p>Créditos:</p>
+                    <p>Imagens do site - <a href="#" target="_blank" title="Link para acessar o site da Pixabay">https://pixabay.com/pt/</a></p>
+                    <p>Ícones do site - <a href="#" target="_blank" title="Link para acessar o site da Flaticon">https://www.flaticon.com/</a></p>
+                </div>
+                <div class="localização">
+                    <p><address>Localização: Rua 123, 367. Aldeota, Fortaleza, CE.</address></p>
+                </div>
+                <div class="redes-sociais">
+                    <a href="#"><img src="../Imagens/instagram.png" alt="Instagram" title="Instagram"></a>
+                    <a href="#"><img src="../Imagens/facebook.png" alt="Facebook" title="Facebook"></a>
+                    <a href="#"><img src="../Imagens/social-media.png" alt="Twitter(Atual - X)" title="Twitter(Atual - X)"></a>
+                </div>
+            </div>
+            <div class="copy">
+                <p>2025 &copy; Werbison Oliveira</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

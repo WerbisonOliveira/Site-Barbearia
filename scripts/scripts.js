@@ -2,6 +2,8 @@
 
 //seleções
 const menu = document.querySelector(".bi");
+const main = document.querySelector("main");
+const footer = document.querySelector("footer");
 const options = document.querySelector("#menu");
 const textBannerH1 = document.querySelector(".text-banner h1");
 const textBannerP = document.querySelector(".text-banner p");
@@ -140,6 +142,12 @@ const check = () => {
 menu.addEventListener("click", () => {
     options.classList.toggle("hide");
 });
+
+[main, footer].map((el) => {
+    el.addEventListener("click", () => {
+        options.classList.add("hide");
+    })
+})
 
 window.addEventListener("load", () => {
     textBannerH1.classList.add("animation");
